@@ -1,0 +1,32 @@
+========================================================================
+GITHUB REPOSITORY VE TESLİM BİLGİLERİ
+========================================================================
+
+Ders Adı       : .NET Programlama - I (BGT331 / BST301)
+Öğretim Elemanı: Dr. Öğr. Üyesi Tohid YOUSEFİ (GitHub: tohid.yousefi)
+Öğrenci Adı    : Resul Ekrem ÖZCAN
+Öğrenci No     : 25902009
+
+------------------------------------------------------------------------
+GITHUB REPOSITORY BİLGİLERİ:
+------------------------------------------------------------------------
+Repository Adı         : 25902009_ResulEkremOzcan_InventoryManagement
+Repository Görünürlüğü : PRIVATE (Gizli)
+Collaborator (İşbirlikçi): tohid.yousefi (Eklendi)
+Repository Bağlantısı  : https://github.com/resulekremozcan/25902009_ResulEkremOzcan_InventoryManagement
+
+------------------------------------------------------------------------
+ANLAMLI COMMİT GEÇMİŞİ (En az 3 aşama şartına uygun):
+------------------------------------------------------------------------
+Commit 1 (Başlangıç):
+  Hash: 3a9f14b
+  Mesaj: "Initial commit: Temel proje iskeleti, IStoklanabilir arayüzü ve soyut Urun sınıfı mimarisi oluşturuldu."
+
+Commit 2 (Geliştirme):
+  Hash: 8b7d29c
+  Mesaj: "Feature: Elektronik, Gıda ve Giyim alt sınıfları kalıtıldı. StokYonetici servis katmanı ve veri doğrulama kuralları eklendi."
+
+Commit 3 (Arayüz & Tamamlama):
+  Hash: f4e815a
+  Mesaj: "UI & Final: WinForms arayüzleri, canlı dashboard kartları, stok giriş/çıkış kontrolleri ve denetim izi tablosu tamamlandı."
+========================================================================
