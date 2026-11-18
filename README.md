@@ -125,7 +125,7 @@ Uygulamanın her bir aktivitesi ve işlevi aşağıda yönlendirme okları ve a�
 ### Aktivite 1: Ana Ekran ve Yönetim Kontrol Paneli (Dashboard)
 Uygulama açılışında kullanıcıyı modern, responsive ve genişleyebilir bir çalışma alanı karşılar.
 
-![Aktivite 1: Ana Ekran Rehberi](03_Report/Gorseller/01_AnaEkran_Rehberi.png)
+![Aktivite 1: Ana Ekran Rehberi](images/01_AnaEkran_Rehberi.png)
 
 - **1. KPI İstatistik Kartları:** Toplam ürün çeşidi, toplam stok adedi, toplam envanter mali değeri ve kritik stoktaki ürün sayısı anlık olarak hesaplanır ve dinamik kartlarda gösterilir.
 - **2. Canlı Arama ve Kategori Filtreleme:** Arama kutusuna yazılan metne ve seçilen kategoriye göre grid eş zamanlı filtrelenir.
@@ -137,7 +137,7 @@ Uygulama açılışında kullanıcıyı modern, responsive ve genişleyebilir bi
 ### Aktivite 2: Canlı Arama ve Kategori Filtreleme İşlevi
 Yüzlerce ürün arasından istenilen kaleme anında ulaşmayı sağlayan çok kriterli arama mekanizmasıdır.
 
-![Aktivite 2: Canlı Arama ve Filtreleme](03_Report/Gorseller/02_AramaFiltre_Rehberi.png)
+![Aktivite 2: Canlı Arama ve Filtreleme](images/02_AramaFiltre_Rehberi.png)
 
 - **1. Metin Tabanlı Arama:** Arama kutusuna örneğin `"Fare"` yazıldığı anda ürün adı ve ürün kodu içinde `IndexOf(..., StringComparison.OrdinalIgnoreCase)` mantığıyla anında filtreleme uygulanır.
 - **2. Filtrelenmiş Grid Görünümü:** Yalnızca kriterle eşleşen ürünler anında tabloda kalır; eşleşmeyen satırlar gizlenir.
@@ -148,7 +148,7 @@ Yüzlerce ürün arasından istenilen kaleme anında ulaşmayı sağlayan çok k
 ### Aktivite 3: Kritik Stok Uyarı Sistemi ve Görsel Vurgulama
 Depodaki ürünlerin tükenmesini önlemek amacıyla geliştirilen görsel erken uyarı mekanizmasıdır.
 
-![Aktivite 3: Kritik Stok Uyarı Sistemi](03_Report/Gorseller/03_KritikStok_Rehberi.png)
+![Aktivite 3: Kritik Stok Uyarı Sistemi](images/03_KritikStok_Rehberi.png)
 
 - **1. Kritik Stok Filtreleme Kutusu:** "Sadece Kritik Stok Seviyesindeki Ürünleri Göster" seçeneği işaretlendiğinde `StokMiktari <= KritikStokSeviyesi` koşulunu sağlayan ürünler süzülür.
 - **2. Kırmızı Renkli Görsel Vurgulama:** `RowPrePaint` olayında kritik seviyedeki ürün satırları açık kırmızı arka plan (`#FFD2D2`) ve koyu kırmızı metin rengiyle otomatik olarak renklendirilir.
@@ -159,7 +159,7 @@ Depodaki ürünlerin tükenmesini önlemek amacıyla geliştirilen görsel erken
 ### Aktivite 4: Denetim İzi ve Hareket Geçmişi (Audit Log)
 Sistemde gerçekleşen her stok operasyonunun zaman damgalı olarak geriye dönük izlenebilirliğini sağlar.
 
-![Aktivite 4: Denetim İzi Geçmişi](03_Report/Gorseller/04_DenetimIzi_Rehberi.png)
+![Aktivite 4: Denetim İzi Geçmişi](images/04_DenetimIzi_Rehberi.png)
 
 - **1. Zaman Damgalı İşlem Listesi:** Her işlem `DateTime.Now` ile milisaniyesine kadar kayıt altına alınır.
 - **2. İşlem Türü (Enum):** `IslemTuru` numaralandırıcısı ile "Giris", "Cikis" veya "Guncelleme" operasyonu net olarak listelenir.
@@ -171,7 +171,7 @@ Sistemde gerçekleşen her stok operasyonunun zaman damgalı olarak geriye dön�
 ### Aktivite 5: Kategoriye Özel Dinamik Ürün Ekleme (Elektronik Örneği)
 Polimorfik yapı sayesinde seçilen kategoriye göre dinamik giriş alanları açan ürün kayıt formudur.
 
-![Aktivite 5: Elektronik Ürün Ekleme](03_Report/Gorseller/05_UrunEkle_Elektronik_Rehberi.png)
+![Aktivite 5: Elektronik Ürün Ekleme](images/05_UrunEkle_Elektronik_Rehberi.png)
 
 - **1. Zorunlu Temel Alanlar:** Ürün kodu, ürün adı, başlangıç stoğu, birim fiyat ve kritik stok seviyesi eksiksiz doldurulmalıdır.
 - **2. 0 TL ve Mantıksız Değer Koruması:** `Birim Fiyat <= 0` girilemez, kuruş hanesi virgül/nokta ile desteklenir.
@@ -183,7 +183,7 @@ Polimorfik yapı sayesinde seçilen kategoriye göre dinamik giriş alanları a�
 ### Aktivite 6: Mevcut Ürün Bilgilerini Güncelleme Ekranı
 Var olan bir ürünün fiyat, kritik eşik ve kategoriye özel teknik verilerini güncelleyen ekrandır.
 
-![Aktivite 6: Ürün Düzenleme Ekranı](03_Report/Gorseller/06_UrunDuzenle_Rehberi.png)
+![Aktivite 6: Ürün Düzenleme Ekranı](images/06_UrunDuzenle_Rehberi.png)
 
 - **1. Salt Okunur (Read-Only) Ürün Kodu:** Veri bütünlüğünü korumak adına benzersiz ürün kodu düzenleme modunda kilitlidir, değiştirilemez.
 - **2. Kilitli Başlangıç Stoğu:** Mevcut stok miktarı doğrudan formdan elle değiştirilemez; yalnızca resmi "Stok Giriş" veya "Stok Çıkış" fişleriyle hareket görebilir.
@@ -194,7 +194,7 @@ Var olan bir ürünün fiyat, kritik eşik ve kategoriye özel teknik verilerini
 ### Aktivite 7: Güvenli Stok Girişi İşlemi
 Tedarikçiden gelen yeni partilerin depoya kabulünü sağlayan kontrollü stok artırma ekranıdır.
 
-![Aktivite 7: Güvenli Stok Girişi](03_Report/Gorseller/07_StokGiris_Rehberi.png)
+![Aktivite 7: Güvenli Stok Girişi](images/07_StokGiris_Rehberi.png)
 
 - **1. İşlem Yapılacak Ürün Kartı:** Ürün kodu, ürün adı ve depodaki mevcut stok bilgisi bilgi kartında kilitli olarak sunulur.
 - **2. Katı Miktar Giriş Validasyonu:** `0`, `00`, `000` gibi geçersiz girişler engellenir; yalnızca 1 ve üzeri pozitif tam sayılar kabul edilir.
@@ -205,7 +205,7 @@ Tedarikçiden gelen yeni partilerin depoya kabulünü sağlayan kontrollü stok 
 ### Aktivite 8: Bakiye Kontrollü Stok Çıkışı İşlemi
 Müşteri sevkiyatları ve satışlar için mevcut stok sınırını aşmayan güvenli stok düşüm ekranıdır.
 
-![Aktivite 8: Bakiye Kontrollü Stok Çıkışı](03_Report/Gorseller/08_StokCikis_Rehberi.png)
+![Aktivite 8: Bakiye Kontrollü Stok Çıkışı](images/08_StokCikis_Rehberi.png)
 
 - **1. Mevcut Bakiye Tespiti:** Seçilen ürünün güncel stok adedi ekranda referans olarak gösterilir.
 - **2. Yetersiz Stok Engeli:** Depoda olandan daha fazla miktar çıkışı yapılması (`Miktar > StokMiktari`) kesinlikle engellenir; bakiye eksiye düşemez.
